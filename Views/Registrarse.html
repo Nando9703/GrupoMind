@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='../CSS/Estilos.css' rel='stylesheet' type='text/css'>
+    <title>Registro|GrupoMind</title>
+</head>
+<body>
+    <div class="Registration"> 
+        <h1 style="color: white;"> Registro | GrupoMind</h1><br>
+        <form method="post">
+            <input id="Identificacion" type="number" placeholder="Identificacion" required="required" />
+            <input id="Nombres" type="text" placeholder="Nombres" required="required" />
+            <input id="Apellidos" type="text" placeholder="Apellidos" required="required" />
+            <input id="Rango" type="text" placeholder="Rango" required="required" />
+            <input class="Apadrinados" id="Apadrinado" type="text" placeholder="Apadrinado 1" required="required" />
+            <input class="Apadrinados2" id="Apadrinado2" type="text" placeholder="Apadrinado 2" required="required" />
+            <input id="Comunidad" type="text" placeholder="Comunidad" required="required" />
+            <input id="Telefono" type="number" placeholder="Télefono" required="required" />
+            <input id="Correo" type="email" placeholder="Correo" required="required" />
+            <input id="FechaNacimiento" type="date" placeholder="Fecha de Nacimiento" required="required" />
+            
+            <button onclick="btnRegistrarse()" type="button" class="btn btn-primary btn-block btn-large">Crear Usuario</button> <br>             
+        </form>
+
+    </div>
+    <script src="../index.js"></script>
+</body>
+</html>

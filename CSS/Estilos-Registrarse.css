@@ -196,23 +196,9 @@ body {
 }
 .login h1 {
   color: #fff;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  letter-spacing: 1px;
   text-align: center;
 }
-.footer {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  position: absolute;
-  width: 100%;
-  top: 70%;
-}
-.footer img {
-  width: 22%;
-  min-width: 32px;
-}
+
 .footer a {
   color: white;
   text-decoration: none;
@@ -262,3 +248,13 @@ input:focus {
   margin-left: 33%;
   margin-top: 15px; */
 /* } */
+.Formulario-registro form {
+  margin: 40px;
+}
+.Formulario-registro form input {
+  margin: 5px;
+}
+.Formulario-registro form button {
+  margin-top: 20px;
+  width: 20%;
+}

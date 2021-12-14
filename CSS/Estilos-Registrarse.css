@@ -257,4 +257,5 @@ input:focus {
 .Formulario-registro form button {
   margin-top: 20px;
   width: 20%;
+  min-width: 125px;
 }

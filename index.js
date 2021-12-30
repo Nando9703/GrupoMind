@@ -23,10 +23,18 @@ function btnRegistrarse() {
     var Telefono =document.getElementById("Telefono").value
     var Correo =document.getElementById("Correo").value
     var FechaNacimiento =document.getElementById("FechaNacimiento").value
+    
+    var DatosUsuario =  {Identificacion,Nombres,Apellidos,Rango,Apadrinados,Apadrinados2,Comunidad,Telefono,Correo,FechaNacimiento}
+
     if (Identificacion > 0) {
     
         console.log(Identificacion);
     }else{
         alert("Faltan Datos por llenar")
     }
+}
+function DatosUsuarios() {
+    var Identificacion = "1345";
+    document.getElementById("Parrafo-Datos").innerText=Identificacion;
+    
 }

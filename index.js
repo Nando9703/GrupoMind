@@ -1,40 +1,37 @@
 //Login
+var User = document.getElementById("User")
+var Password = document.getElementById("Password")
+
 function btnLogin() {
-    var User = document.getElementById("User");
-    var ValueUser = User.value;
-    var Password = document.getElementById("Password");
-    var PasswordValue = Password.value;
     
-    if (ValueUser == "Nando" && PasswordValue == 123456789) {
+    if (User.value == "Nando" && Password.value == 123456789) {
         window.location="./Views/Inicio.html";
     }else{
         alert ("Usuario y password Incorrectos");
     }
 }
-function btnRegistrarse() {
+var Saludar = ("Hola, "+ User)
+var greeting = document.getElementById("greeting")
+greeting.innerText = Saludar;
     
-    var Identificacion =document.getElementById("Identificacion").value    
-    var Nombres =document.getElementById("Nombres").value
-    var Apellidos =document.getElementById("Apellidos").value
-    var Rango =document.getElementById("Rango").value
-    var Apadrinados =document.getElementById("Apadrinado").value
-    var Apadrinados2 =document.getElementById("Apadrinado2").value
-    var Comunidad =document.getElementById("Comunidad").value
-    var Telefono =document.getElementById("Telefono").value
-    var Correo =document.getElementById("Correo").value
-    var FechaNacimiento =document.getElementById("FechaNacimiento").value
-    
-    var DatosUsuario =  {Identificacion,Nombres,Apellidos,Rango,Apadrinados,Apadrinados2,Comunidad,Telefono,Correo,FechaNacimiento}
+var Identificacion =document.getElementById("Identificacion") 
+var Nombres =document.getElementById("Nombres")
+var Apellidos =document.getElementById("Apellidos")
+var Telefono =document.getElementById("Telefono")
+var Correo =document.getElementById("Correo")
+var FechaNacimiento =document.getElementById("FechaNacimiento")
 
-    if (Identificacion > 0) {
+
+// var DatosUsuario =  {Identificacion,Nombres,Apellidos,Rango,Apadrinados,Apadrinados2,Comunidad,Telefono,Correo,FechaNacimiento}
+// function btnRegistrarse(Identificacion,Nombres,Apellidos,Rango,Apadrinados,Apadrinados2,Comunidad,Telefono,Correo,FechaNacimiento) {
     
-        console.log(Identificacion);
-    }else{
-        alert("Faltan Datos por llenar")
-    }
-}
-function DatosUsuarios() {
-    var Identificacion = "1345";
-    document.getElementById("Parrafo-Datos").innerText=Identificacion;
+// if (Identificacion > 0 && Nombres > 1 && Apellidos >1 && Telefono >1 && Correo >1 && FechaNacimiento >1) {
+//     INSERT INTO `usuarios` (`Identificacion`, `Nombres`, `Apellidos`, `Rango`, `Apadrinados`, `Apadrinados2`, `Comunidad`, `Telefono`, `Correo`, `FechaNacimiento`) VALUES (Identificacion,Nombres,Apellidos,"Principiante","","",0,Telefono,Correo,FechaNacimiento);
+// }
     
-}
+// }
+// function DatosUsuarios() {
+//     var Identificacion = "1345";
+//     document.getElementById("Parrafo-Datos").innerText=Identificacion;
+    
+// }

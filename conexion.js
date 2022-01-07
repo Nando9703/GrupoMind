@@ -1,8 +1,8 @@
 // Obtenga el servicio mysql
-var mysql = require('mysql');
+const mysql = require('mysql');
 
 // Agregue las credenciales para acceder a su base de datos
-var connection = mysql.createConnection({
+const connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
     password : '',
@@ -15,6 +15,8 @@ connection.connect(function(err) {
     if(err){
         console.log(err.code);
         console.log(err.fatal);
+    }else{
+        console.log("LA conexion Funciona")
     }
 });
 
